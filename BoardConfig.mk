@@ -101,5 +101,8 @@ BOARD_USES_METADATA_PARTITION := true
 # Platform
 TARGET_BOARD_PLATFORM := mt6789
 
+# SPL
+VENDOR_SECURITY_PATCH := 2025-10-01
+
 # Inherit the proprietary files
 include vendor/motorola/vicky/BoardConfigVendor.mk
