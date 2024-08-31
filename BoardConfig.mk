@@ -11,5 +11,12 @@ TARGET_ARCH_VARIANT := armv8-2a-dotprod
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_VARIANT := cortex-a76
 
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := vicky
+TARGET_NO_BOOTLOADER := true
+
+# Platform
+TARGET_BOARD_PLATFORM := mt6789
+
 # Inherit the proprietary files
 include vendor/motorola/vicky/BoardConfigVendor.mk
