@@ -152,6 +152,8 @@ BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 2
 
 # Vintf
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    hardware/mediatek/vintf/mediatek_framework_compatibility_matrix.xml
 
 # Inherit the proprietary files
 include vendor/motorola/vicky/BoardConfigVendor.mk
