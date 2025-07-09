@@ -6,6 +6,18 @@
 DEVICE_PATH := device/motorola/vicky
 KERNEL_PATH := device/motorola/vicky-kernel
 
+# A/B
+AB_OTA_PARTITIONS := \
+    boot \
+    product \
+    system \
+    system_ext \
+    vbmeta \
+    vbmeta_system \
+    vendor \
+    vendor_boot \
+    vendor_dlkm
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a-dotprod
