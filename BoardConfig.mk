@@ -78,6 +78,17 @@ BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/m
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNEL_PATH)/modules.load.recovery))
 BOOT_KERNEL_MODULES := $(BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD) $(BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD)
 
+# Recovery touch modules (from vendor_dlkm)
+RECOVERY_KERNEL_MODULES := \
+    mmi_info \
+    mmi_relay \
+    sensors_class \
+    touchscreen_u_mmi \
+    goodix_brl_mmi
+
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES += $(addprefix $(KERNEL_PATH)/vendor_dlkm/,$(addsuffix .ko,$(RECOVERY_KERNEL_MODULES)))
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD += $(RECOVERY_KERNEL_MODULES)
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := vicky
 TARGET_NO_BOOTLOADER := true
