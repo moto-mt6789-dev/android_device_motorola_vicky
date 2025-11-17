@@ -161,3 +161,13 @@ vendor/etc/audio_param/Volume_ParamUnitDesc.xml
 vendor/firmware/aw883xx_acf.bin
 vendor/firmware/aw9610x_0.bin
 vendor/firmware/awinic_params.bin
+
+# Bluetooth (Driver)
+vendor/lib64/libbluetooth_mtk.so
+vendor/lib64/libbt-vendor.so
+
+# Bluetooth (Firmware)
+vendor/etc/init/init.bt_drv.rc
+vendor/firmware/soc2_2_ram_bt_1d_1_hdr.bin
+vendor/firmware/soc2_2_ram_bt_1e_1_hdr.bin
+vendor/firmware/BT_FW.cfg

@@ -80,6 +80,10 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_SHIPPING_API_LEVEL := 31
 BOARD_SHIPPING_API_LEVEL := 31
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth-service.mediatek
+
 # Fastboot
 PRODUCT_PACKAGES += \
     android.hardware.fastboot-service.example_recovery \
