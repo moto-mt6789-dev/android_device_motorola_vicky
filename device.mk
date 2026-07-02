@@ -73,6 +73,7 @@ PRODUCT_PACKAGES += \
     init.mmi.overlay.rc \
     init.modem.rc \
     init.mt6789.rc \
+    init.mt6789.usb.rc \
     init.recovery.mt6789.rc \
     init.mtkgki.rc \
     init.oem.hw.sh \
